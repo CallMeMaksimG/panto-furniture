@@ -1,0 +1,14 @@
+.nav {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    gap: 20px;
+}
+
+.logo {
+    align-self: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.28px;
+    text-transform: capitalize;
+}
