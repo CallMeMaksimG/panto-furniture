@@ -1,8 +1,7 @@
 .benefit {
-
 }
 
-.benefit__title{
+.benefit__title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 24px;
@@ -12,20 +11,5 @@
     margin-bottom: 14px;
     font-size: 16px;
     line-height: 185%; /* 29.6px */
-    opacity: .8;
-}
-
-.benefit__link {
-    display: inline-flex;
-    gap: 13px;
-    align-items: center;
-    color: var(--ui-orange);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 185%; /* 25.9px */
-
-    &::after {
-        content: url(./../img/icons/arrow-right.svg);
-        height: 24px;
-    }
+    opacity: 0.8;
 }
