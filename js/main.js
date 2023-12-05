@@ -2,7 +2,7 @@ const infoButtons = document.querySelectorAll('.info-dot');
 const infoHints = document.querySelectorAll('.info-hint');
 
 for (let button of infoButtons) {
-    button.addEventListener('click', (showHint));
+    button.addEventListener('click', showHint);
 }
 
 function showHint(e) {
@@ -23,3 +23,30 @@ function closeHints() {
 for (let hint of infoHints) {
     hint.addEventListener('click', (e) => e.stopPropagation());
 }
+
+//swiper
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 42,
+    freeMode: true,
+    // breakpoints: {
+    //     640: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 20,
+    //     },
+    //     768: {
+    //         slidesPerView: 4,
+    //         spaceBetween: 40,
+    //     },
+    //     1024: {
+    //         slidesPerView: 5,
+    //         spaceBetween: 50,
+    //     },
+    // },
+
+    navigation: {
+        nextEl: '#sliderNext',
+        prevEl: '#sliderPrev',
+    },
+});
