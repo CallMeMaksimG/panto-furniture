@@ -69,10 +69,14 @@ for (let btn of tabsBtns) {
         console.log(btn.dataset.tab);
 
         for (let product of tabsProducts) {
-            if (product.dataset.tabValue === btn.dataset.tab) {
+            if (btn.dataset.tab === 'all') {
                 product.classList.remove('none');
             } else {
-                product.classList.add('none');
+                if (product.dataset.tabValue === btn.dataset.tab) {
+                    product.classList.remove('none');
+                } else {
+                    product.classList.add('none');
+                }
             }
         }
         swiper.update();
