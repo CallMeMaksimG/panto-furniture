@@ -50,3 +50,31 @@ const swiper = new Swiper('.swiper', {
         prevEl: '#sliderPrev',
     },
 });
+
+//Tabs
+
+const tabsBtns = document.querySelectorAll('[data-tab]');
+const tabsProducts = document.querySelectorAll('[data-tab-value]');
+
+console.log(tabsProducts);
+
+for (let btn of tabsBtns) {
+    btn.addEventListener('click', () => {
+        for (let btn of tabsBtns) {
+            btn.classList.remove('tab-controls__btn--active');
+        }
+
+        btn.classList.add('tab-controls__btn--active');
+
+        console.log(btn.dataset.tab);
+
+        for (let product of tabsProducts) {
+            if (product.dataset.tabValue === btn.dataset.tab) {
+                product.classList.remove('none');
+            } else {
+                product.classList.add('none');
+            }
+        }
+        swiper.update();
+    });
+}

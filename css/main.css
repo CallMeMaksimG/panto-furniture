@@ -486,7 +486,7 @@ body {
   padding: 6px;
   align-items: flex-start;
   border-radius: 44px;
-  background: #EEE;
+  background: #eee;
 }
 
 .tab-controls__btn {
@@ -508,7 +508,10 @@ body {
 }
 .tab-controls__btn--active {
   border-radius: 32px;
-  background: #FFF;
+  background: #fff;
+}
+.tab-controls__btn--active:hover {
+  background-color: #fff;
 }
 
 .card {

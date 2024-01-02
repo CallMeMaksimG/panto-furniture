@@ -3,7 +3,7 @@
     padding: 6px;
     align-items: flex-start;
     border-radius: 44px;
-    background: #EEE;
+    background: #eee;
 }
 
 .tab-controls__btn {
@@ -16,17 +16,21 @@
     transition: background-color 0.2s ease-in;
 
     font-size: 18px;
-    color: rgba(31,31,31,.8);
+    color: rgba(31, 31, 31, 0.8);
     border-radius: 32px;
     font-weight: 500;
     line-height: 185%; /* 33.3px */
 
     &:hover {
-        background-color: rgba(255,255,255, .5);
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     &--active {
         border-radius: 32px;
-        background: #FFF;
+        background: #fff;
+
+        &:hover {
+            background-color: #fff;
+        }
     }
 }
