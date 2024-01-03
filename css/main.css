@@ -246,6 +246,16 @@ body {
   gap: 65px;
 }
 
+.nav-list__link--dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-list__link--dropdown::after {
+  content: url("./../img/icons/arrow-down.svg");
+  height: 24px;
+}
+
 .cart {
   justify-self: end;
   align-self: center;

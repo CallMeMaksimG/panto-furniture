@@ -14,5 +14,18 @@
 }
 
 .nav-list__link {
+    
+    &--dropdown {
+        display: flex;
+        align-items: center;
+        gap: 8px;
 
+        &::after {
+            content: url('./../img/icons/arrow-down.svg');
+            height: 24px;
+        }
+
+    }
+
+    
 }
