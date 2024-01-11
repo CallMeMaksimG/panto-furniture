@@ -78,3 +78,17 @@ for (let btn of tabsBtns) {
         swiper.update();
     });
 }
+
+// Mobile nav
+
+const mobileNavOpenBtn = document.querySelector('.nav__btn');
+const mobileNavCloseBtn = document.querySelector('.mobile-nav-btn-close');
+const mobileMenu = document.querySelector('.mobile-nav-wrapper');
+mobileNavOpenBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('mobile-nav-wrapper--open');
+});
+
+
+mobileNavCloseBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('mobile-nav-wrapper--open');
+})
