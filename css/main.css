@@ -235,6 +235,15 @@ body {
   align-self: center;
 }
 
+.nav__btn {
+  display: none;
+}
+@media (max-width: 992px) {
+  .nav__btn {
+    display: block;
+  }
+}
+
 .nav-list {
   justify-self: center;
   align-self: center;
@@ -244,6 +253,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 65px;
+}
+@media (max-width: 992px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-list__item {

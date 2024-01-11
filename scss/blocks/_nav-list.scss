@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     gap: 65px;
+
+    @include tablet() {
+        display: none;
+    }
 }
 
 .nav-list__item {

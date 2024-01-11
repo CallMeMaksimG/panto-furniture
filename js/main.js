@@ -56,8 +56,6 @@ const swiper = new Swiper('.swiper', {
 const tabsBtns = document.querySelectorAll('[data-tab]');
 const tabsProducts = document.querySelectorAll('[data-tab-value]');
 
-console.log(tabsProducts);
-
 for (let btn of tabsBtns) {
     btn.addEventListener('click', () => {
         for (let btn of tabsBtns) {
@@ -65,8 +63,6 @@ for (let btn of tabsBtns) {
         }
 
         btn.classList.add('tab-controls__btn--active');
-
-        console.log(btn.dataset.tab);
 
         for (let product of tabsProducts) {
             if (btn.dataset.tab === 'all') {
