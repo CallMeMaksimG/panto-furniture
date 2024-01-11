@@ -10,11 +10,13 @@
 }
 
 .nav-list__item {
-
+    position: relative;
+    padding-bottom: 10px;
+    transform: translateY(10px);
 }
 
 .nav-list__link {
-    
+    transition: opacity .2s ease-in-out;
     &--dropdown {
         display: flex;
         align-items: center;
@@ -24,8 +26,30 @@
             content: url('./../img/icons/arrow-down.svg');
             height: 24px;
         }
-
     }
 
-    
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.nav-list__sub-nav {
+    opacity: 0;
+    pointer-events: none;
+
+    position: absolute;
+    left: 0;
+    top: calc(100%);
+    width: 160px;
+
+    transform: translate(0%, 10%);
+
+    transition: all .2s ease-in-out;
+}
+
+.nav-list__item:hover .nav-list__sub-nav{
+    opacity: 1;
+    display: block;
+    transform: translate(0%, 0%);
+    pointer-events: all;
 }

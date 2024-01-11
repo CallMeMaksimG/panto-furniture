@@ -246,6 +246,15 @@ body {
   gap: 65px;
 }
 
+.nav-list__item {
+  position: relative;
+  padding-bottom: 10px;
+  transform: translateY(10px);
+}
+
+.nav-list__link {
+  transition: opacity 0.2s ease-in-out;
+}
 .nav-list__link--dropdown {
   display: flex;
   align-items: center;
@@ -254,6 +263,27 @@ body {
 .nav-list__link--dropdown::after {
   content: url("./../img/icons/arrow-down.svg");
   height: 24px;
+}
+.nav-list__link:hover {
+  opacity: 0.8;
+}
+
+.nav-list__sub-nav {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 160px;
+  transform: translate(0%, 10%);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-list__item:hover .nav-list__sub-nav {
+  opacity: 1;
+  display: block;
+  transform: translate(0%, 0%);
+  pointer-events: all;
 }
 
 .cart {
@@ -805,4 +835,20 @@ body {
   letter-spacing: 0.28px;
   text-transform: capitalize;
   color: #FFF;
+}
+
+.sub-nav {
+  display: grid;
+  gap: 16px;
+  padding: 16px 25px;
+  border-radius: 10px;
+  background-color: var(--footer-bg);
+  font-size: 16px;
+}
+
+.sub-nav__link {
+  transition: color 0.2s ease-in-out;
+}
+.sub-nav__link:hover {
+  color: var(--footer-accent);
 }/*# sourceMappingURL=main.css.map */
