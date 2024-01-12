@@ -13,8 +13,6 @@
     }
 
     @include retina-bg(url('./../../img/header/header-bg@2x.jpg'));
-
-    
 }
 
 .header__nav {
@@ -34,12 +32,10 @@
     line-height: 130%; /* 104px */
     letter-spacing: -0.8px;
     text-transform: capitalize;
-
 }
 
 .header__content p {
     max-width: 606px;
-    // font-size: 24px;
     line-height: 160%; /* 38.4px */
     margin: 0 auto;
     opacity: 0.8;
@@ -51,7 +47,7 @@
     margin-top: 45px;
     display: inline-block;
 
-    @include mobile-xl () {
+    @include mobile-xl() {
         display: none;
     }
 }
@@ -59,7 +55,7 @@
 .header__dot {
     position: absolute;
 
-    @include mobile-xl () {
+    @include mobile-xl() {
         display: none;
     }
 }

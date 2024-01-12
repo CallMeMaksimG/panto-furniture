@@ -29,20 +29,26 @@ body {
     }
 }
 
+@mixin desktop-small() {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+
 @mixin tablet() {
-    @media(max-width: 992px) {
+    @media (max-width: 992px) {
         @content;
     }
 }
 
 @mixin mobile-xl() {
-    @media(max-width: 819px) {
+    @media (max-width: 819px) {
         @content;
     }
 }
 
 @mixin mobile() {
-    @media(max-width: 629px) {
+    @media (max-width: 629px) {
         @content;
     }
 }

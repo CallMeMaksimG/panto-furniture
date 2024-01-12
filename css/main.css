@@ -148,6 +148,11 @@ body {
   display: none !important;
 }
 
+.title-2 {
+  font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
+  font-weight: 700;
+}
+
 .header {
   position: relative;
   padding-top: 40px;
@@ -505,14 +510,12 @@ body {
 
 .products {
   padding: 50px 0;
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 
 .products__title {
   margin-bottom: 32px;
   text-align: center;
-  font-size: 42px;
-  font-weight: 700;
 }
 
 .products__tabs {
@@ -521,13 +524,23 @@ body {
 }
 
 .products__slider {
-  margin-bottom: 60px;
+  margin-bottom: clamp(30px, 0.982rem + 4.46vw, 60px);
+}
+@media (max-width: 1400px) {
+  .products__slider {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 629px) {
+  .products__slider {
+    padding: 0 20px;
+  }
 }
 
 .products__link {
   margin-bottom: 50px;
   text-align: center;
-  color: #E58411;
+  color: #e58411;
   font-family: Gilroy-Medium;
   font-size: 18px;
   font-style: normal;

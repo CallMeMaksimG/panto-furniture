@@ -30,23 +30,23 @@ for (let hint of infoHints) {
 //swiper
 const swiper = new Swiper('.swiper', {
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 42,
     freeMode: true,
-    // breakpoints: {
-    //     640: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     },
-    //     768: {
-    //         slidesPerView: 4,
-    //         spaceBetween: 40,
-    //     },
-    //     1024: {
-    //         slidesPerView: 5,
-    //         spaceBetween: 50,
-    //     },
-    // },
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        920: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1230: {
+            slidesPerView: 4,
+            spaceBetween: 42,
+        },
+    },
 
     navigation: {
         nextEl: '#sliderNext',
