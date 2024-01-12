@@ -13,6 +13,13 @@
     }
 
     @include retina-bg(url('./../../img/header/header-bg@2x.jpg'));
+
+    @include mobile() {
+        padding-top: 20px;
+        padding-bottom: 240px;
+        background-position: center;
+        aspect-ratio: unset;
+    }
 }
 
 .header__nav {

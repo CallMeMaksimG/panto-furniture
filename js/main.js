@@ -91,7 +91,6 @@ mobileNavOpenBtn.addEventListener('click', () => {
     mobileMenu.classList.add('mobile-nav-wrapper--open');
 });
 
-
 mobileNavCloseBtn.addEventListener('click', () => {
     mobileMenu.classList.remove('mobile-nav-wrapper--open');
-})
+});
