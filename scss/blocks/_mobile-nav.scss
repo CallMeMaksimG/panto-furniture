@@ -4,10 +4,15 @@
     padding: 30px 20px;
     font-size: 20px;
     position: absolute;
+    z-index: 9;
     right: 0;
     top: 0;
     bottom: 0;
     width: 320px;
+    a {
+        color: var(--header-text-color);
+    }
+    
 
     &--open {
         display: block;

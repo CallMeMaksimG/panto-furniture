@@ -14,13 +14,11 @@
 
     @include retina-bg(url('./../../img/header/header-bg@2x.jpg'));
 
-    @include tablet() {
-        position: static;
-    }
+    
 }
 
 .header__nav {
-    margin-bottom: 86px;
+    margin-bottom: clamp(20px, 0.071rem + 5.89vw, 86px);
 }
 
 .header__content {
@@ -29,47 +27,59 @@
 
 .header__title {
     margin-bottom: 14px;
-    font-size: 80px;
+    // font-size: 80px;
+    font-size: clamp(28px, 0.821rem + 4.64vw, 80px);
     font-style: normal;
     font-weight: 700;
     line-height: 130%; /* 104px */
     letter-spacing: -0.8px;
     text-transform: capitalize;
+
 }
 
 .header__content p {
     max-width: 606px;
-    font-size: 24px;
+    // font-size: 24px;
     line-height: 160%; /* 38.4px */
     margin: 0 auto;
     opacity: 0.8;
+    font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
 }
 
 .header__search {
     margin: 0 auto;
     margin-top: 45px;
+    display: inline-block;
+
+    @include mobile-xl () {
+        display: none;
+    }
 }
 
-.header__dot-sofa {
+.header__dot {
     position: absolute;
+
+    @include mobile-xl () {
+        display: none;
+    }
+}
+
+.header__dot--sofa {
     left: calc(296 * 100% / 1440);
     top: calc(685 * 100% / 1084);
 }
 
-.header__dot-vase {
-    position: absolute;
+.header__dot--vase {
     left: calc(103 * 100% / (1440 - 30));
     top: calc(743 * 100% / (1084 - 9));
 }
 
-.header__dot-item {
-    position: absolute;
+.header__dot--item {
     left: calc(800 * 100% / 1440);
     top: calc(777 * 100% / 1084);
 }
 
-.header__dot-flowerpot {
-    position: absolute;
+.header__dot--flowerpot {
     right: calc(42 * 100% / 1440);
     top: calc(809 * 100% / 1084);
 }
